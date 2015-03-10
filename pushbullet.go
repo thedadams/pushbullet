@@ -154,7 +154,7 @@ func (c *Client) Push(data interface{}) error {
 }
 
 type Note struct {
-	Iden  string `json:"device_iden"`
+	Iden  string `json:"device_iden,omitempty"`
 	Type  string `json:"type"`
 	Title string `json:"title"`
 	Body  string `json:"body"`
